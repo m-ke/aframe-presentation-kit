@@ -1,10 +1,8 @@
-<!-- .slide: data-background="media/img/aframe.jpg" -->
+<!-- .slide: data-background="media/img/lets-try-webvr.jpeg" -->
 
 <div class="talk-title">
-  <h1>A-Frame</h1>
-  <p>A web framework for building VR experiences</p>
-  <p class="talk-info">
-    @andgokevin | Mozilla VR | **aframe.io**
+  <p class="talk-info" style="top:270px">
+    @salad_milk_soup | Archilogic / 3d.io 
   </p>
 </div>
 
@@ -14,27 +12,121 @@
 
 ------
 
+# Who's talking
+
+<div style="display:inline-block; float:left; width: 45%; font-size:0.8em"><br>
+  <p class="talk-info" style="top:20%">
+  Monika Kedrova<br><br>
+  Software Engineer @Archilogic / 3d.io<br><br>
+  Biologist &rarr; English teacher &rarr; software engineer<br><br>
+  @salad_milk_soup
+  </p>
+</div>
+
+
+<div style="display:inline-block; offset: 50%; width: 40%">
+<img data-src="media/img/monika_hololens.jpg"></div>
+<!--<div class="image-row">
+  <div><img data-src="media/img/monika_hololens.jpg"></div>
+</div>-->
+
+
+<!-- NOTES -->
+-  bla-bla 
+
+------
+
 # Virtual Reality
 
-<!-- .slide: data-background-video="media/video/virtualreality.mp4" data-background-video-loop="true" data-background-video-muted="true" data-state="state--bg-dark" -->
+<!-- .slide: data-background="media/img/vr-driving.jpg" -->
 
 <!-- NOTES -->
 - Ask how many have tried VR.
 - Virtual reality is a technology platform that transports you to realistic, interactive, immersive 3D environments
 - It's the next platform, will change how we work + play + communicate digitally, face of society
 
----
+------
+
+# Why VR?
+
+------
+
+## VR has been around for a while...
+
+<img class="stretch" data-src="media/img/sword-of-damocles.png">
+
+------
+
+## Main areas of use
+
+<div class="slide__boilerplate">
+  <p>Entertainment / Gaming</p>
+  <p>Education & training</p>
+  <p>Healthcare</p>
+  <p>Marketing</p>
+  <p>Tourism</p>
+  <p>Art</p>
+  <p>Architecture / real estate</p>
+</div>
+
+------
+
+# Education
+
+<!-- .slide: data-background="media/img/cadavr.gif" -->
+
+------
+
+<!-- .slide: data-background="media/img/mars.jpg" -->
+
+# Journalism - *Journey to Mars*
+
+The Washington Post
+
+------
+
+<!-- .slide: data-background="media/img/a-blast.gif" -->
+
+# Gaming - *A-Blast*
+
+@mozillavr
+
+------
+
+<!-- .slide: data-background="media/img/birdly.gif" -->
+
+<p class="talk-info" style="font-size:1.6em"> Immersion </p>
+
+------
+
+<!-- .slide: data-background="media/img/tilt-brush.gif" -->
+
+<p class="talk-info" style="font-size:1.6em"> Imagination </p>
+
+------
+
+<!-- .slide: data-background="media/img/360tours.gif" -->
+
+<p class="talk-info" style="font-size:1.6em"> Exploration </p>
+
+------
+
+<!-- .slide: data-background="media/img/airbus-hololens.png" -->
+
+------
+
+## New landscape
 
 <div class="image-row">
-  <div><img data-src="media/img/google-cardboard.png"></div>
-  <div><img data-src="media/img/google-daydream.png"></div>
-  <div><img data-src="media/img/samsung-gearvr.png"></div>
+  <div><img data-src="media/img/htc-vive.png"></div>
+  <div><img data-src="media/img/daydream.png"></div>
+  <div><img data-src="media/img/playstation-vr.png"></div>
 </div>
 
 <div class="image-row">
   <div><img data-src="media/img/oculus-rift.png"></div>
-  <div><img data-src="media/img/playstation-vr.png"></div>
-  <div><img data-src="media/img/htc-vive.png"></div>
+  <div><img data-src="media/img/google-cardboard.png"></div>
+  <div><img data-src="media/img/samsung-gearvr.png"></div>
 </div>
 
 <!-- NOTES -->
@@ -43,14 +135,38 @@
 - HTC Vive with Steam currently offers the most compelling experiences, but never know
 - See a lot of different devices, systems, platforms competing against each other...
 
----
+------
 
-## Friction of VR Ecosystems
+## Accessibility
+
+Who has access to virtual reality?
+
+<img class="stretch" data-src="media/img/vr-sales-1.png">
+
+------
+
+## Accessibility
+
+Who has access to virtual reality?
+
+<img class="stretch" data-src="media/img/vr-sales-2.png">
+
+------
+
+## Accessibility
+
+Who has access to virtual reality?
+
+<img class="stretch" data-src="media/img/vr-sales-3.png">
+
+------
+
+##  Challenges
 
 <div class="captioned-image-row">
   <div>
-    <img data-src="media/img/gatekeeper.png">
-    <i>Gatekeepers</i>
+    <img data-src="media/img/cardboard-closed.jpeg">
+    <i>Varying capabilities</i>
   </div>
   <div>
     <img data-src="media/img/downloads-installs.png">
@@ -58,7 +174,7 @@
   </div>
   <div>
     <img data-src="media/img/closed-door.png">
-    <i>Closed</i>
+    <i>Siloed content</i>
   </div>
 </div>
 
@@ -70,22 +186,20 @@
 
 ------
 
-# WebVR
-
-An open virtual reality platform with the advantages of **the Web**
+# WebVR API
 
 <div class="captioned-image-row">
   <div>
-    <img data-src="media/img/web-is-open.png">
-    <i>Open</i>
+    <img data-src="media/img/hmd.png">
+    <i>Detect headsets</i>
   </div>
   <div>
-    <img data-src="media/img/web-is-connected.png">
-    <i>Connected</i>
+    <img data-src="media/img/headset.png">
+    <i>Orientation / position</i>
   </div>
   <div>
-    <img data-src="media/img/web-is-instant.png">
-    <i>Instant</i>
+    <img data-src="media/img/canvas.png">
+    <i>Controllers</i>
   </div>
 </div>
 
@@ -110,16 +224,6 @@ Transition:
 - Need to act to make it reality, can't wait for VR to bake and crystallize
 - Get involved
 
----
-
-<img class="stretch" data-src="media/img/webvr.png">
-
-Browser APIs that enable WebGL rendering to headsets and access to VR
-sensors
-
-https://w3c.github.io/webvr/
-
-<!-- NOTES -->
 API:
 - Optimized rendering path to headsets
 - Access position and rotation (pose) data
@@ -131,7 +235,7 @@ History:
 
 Not just a specification, it's implemented...
 
----
+------
 
 https://webvr.rocks
 
@@ -175,26 +279,31 @@ https://webvr.rocks
 - Mobile Polyfill: use device motion / orientation sensors to polyfill on smartphones
 - With all the browsers behind it...
 
----
+------
 
-## Metaverse
+## Availability across browsers
+
+<img class="stretch" data-src="media/img/webvr-api-browsers.png">
+
+
+------
 
 <!-- .slide: data-background="media/img/metaverse.jpg" -->
 
+Too hard to create WebVR experiences...
+
 <!-- NOTES -->
+ Metaverse
+<i>by Ada Rose Cannon (@lady_ada_king)</i>
 - Shared persistent collective virtual spaces
 - Alternate digital reality that the world may live, work, play
 - Must be decentralized/open/connected, the Web is best platform to fully realize
 - Where do we begin?
 - three.js abstracts WebGL, 3D, and WebVR, but could still make it more accessible
 
----
+------
 
-Too hard to create WebVR experiences...
-
----
-
-<!-- .slide: data-background-video="media/video/boilerplate.mp4" data-state="state--bg-dark" -->
+<!-- .slide: data-background-video="media/video/boilerplate.mp4" data-state="state--bg-dark" loop="true" -->
 
 <div class="slide__boilerplate">
   <p>Import WebVR polyfill</p>
@@ -232,7 +341,7 @@ A web framework for building virtual reality experiences
   - Prototype and experiment WebVR and VR UX faster
   - Vehicle to kickstart WebVR ecosystem
 
----
+------
 
 ## Hello World
 
@@ -260,7 +369,7 @@ A web framework for building virtual reality experiences
   - canvas, camera, renderer, lights, controls, render loop, WebVR polyfill, VREffect
 - Put stuff inside our scene...
 
----
+------
 
 ## Hello World
 
@@ -286,25 +395,7 @@ A web framework for building virtual reality experiences
 - Encapsulated: copy-and-paste HTML anywhere else and still work, no state or variables
 - Quickly look at a live example...
 
----
-
-## Hello Metaverse
-
-<i>by Ada Rose Edwards (@lady_ada_king)</i>
-
-<!-- .slide: data-background="media/img/metaverse.jpg" -->
-
-<div class="stretch" data-aframe-scene="scenes/80s.html"></div>
-
-<!-- NOTES -->
-- A-Frame scene by Ada Rose Edwards running from inside my HTML slides
-- Works on desktop, Android, iOS, Samsung Gear VR, Oculus Rift, HTC Vive
-- Could open up the DOM Inspector to change values live
-- Since it's just HTML...
-
----
-
-<!-- .slide: data-background="media/img/aframe.jpg" -->
+------
 
 ## Works With Everything
 
@@ -344,122 +435,18 @@ A web framework for building virtual reality experiences
 
 ------
 
-# Entity-Component-System
+# Component system 
 
-<!-- .slide: data-background="media/img/minecraft-blocks.png" -->
-
-<!-- NOTES -->
-- Is an entity-component framework
-- Popular in game development, used by Unity
-- All objects in scene are **entities** that inherently empty objects. Plug in
-  **components** to attach appearance / behavior / functionality
-- 2D web where every element was fixed
-- 3D/VR is different, objects of infinite types and complexities, need an easy way to build up different kinds of objects
-
----
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="slide-in none" -->
-
-## Composing an Entity
-
-```html
-<a-entity>
-```
-<!-- .element: class="stretch" -->
-
-<!-- NOTES -->
-- Start with an `<a-entity>`
-- By itself, has no appearance, behavior, functionality
-- Plug in components to add appearance, behavior, functionality
-
----
-
-## Composing an Entity
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
-
-```html
-<a-entity
-  geometry="primitive: sphere; radius: 1.5"
-  material="color: #343434; roughness: 0.4; sphericalEnvMap: #texture">
-```
-<!-- .element: class="stretch" -->
-
-<!-- NOTES -->
-- Syntax similar to CSS styles
-- Component names as HTML attributes
-- Component properties and values as HTML attribute value
-
----
-
-## Composing an Entity
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
-
-```html
-<a-entity
-  geometry="primitive: sphere; radius: 1.5"
-  material="color: #343434; roughness: 0.4; sphericalEnvMap: #texture"
-  position="-1 2 4" rotation="45 0 90" scale="2 2 2">
-```
-<!-- .element: class="stretch" -->
-
----
-
-## Composing an Entity
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
-
-```html
-<a-entity
-  geometry="primitive: sphere; radius: 1.5"
-  material="color: #343434; roughness: 0.4; sphericalEnvMap: #texture"
-  position="-1 2 4" rotation="45 0 90" scale="2 2 2"
-  animation="property: rotation; loop: true; to: 0 360 0"
-  movement-pattern="type: spline; speed: 4">
-```
-<!-- .element: class="stretch" -->
-
----
-
-## Composing an Entity
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
-
-```html
-<a-entity
-  json-model="src: #robot"
-  position="-1 2 4" rotation="45 0 90" scale="2 2 2"
-  animation="property: rotation; loop: true; to: 0 360 0"
-  movement-pattern="type: spline; speed: 4">
-```
-<!-- .element: class="stretch" -->
-
----
-
-## Composing an Entity
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
-
-```html
-<a-entity
-  json-model="src: #robot"
-  position="-1 2 4" rotation="45 0 90" scale="2 2 2"
-  animation="property: rotation; loop: true; to: 0 360 0"
-  movement-pattern="type: attack; target: #player"
-  explode="on: hit">
-```
-<!-- .element: class="stretch" -->
-
----
+------
 
 <!-- .slide: data-background="media/img/standard-components.png" data-background-size="contain" -->
+
 
 <!-- NOTES -->
 - These are some components that ship with A-Frame
 - A-Frame is fully extensible at its core so...
 
----
+------
 
 <!-- .slide: data-background="media/img/community-components.png" data-background-size="contain" -->
 
@@ -472,168 +459,39 @@ A web framework for building virtual reality experiences
 - Advanced developers empowering other developers
 - Working on collecting these components...
 
----
+------
 
-# Registry
+## Look into the future: Web AR
 
-<!-- .slide: data-background-color="#333" -->
-
-Curated collection of A-Frame components.
-
-<a class="stretch" href="https://aframe.io/aframe-registry">
-  <video loop data-src="media/video/registrypreview.mp4" data-autoplay></video>
-</a>
-
-<!-- NOTES -->
-- Collecting them into the A-Frame registry
-- Like a store of components that we make sure work well
-- People can browse and search for components or install them....
-
----
-
-# Registry
-
-<!-- .slide: data-background-color="#333" -->
-
-Curated collection of A-Frame components.
-
-<video loop data-src="media/video/leaphands.mp4" data-autoplay></video>
-
----
-
-## Inspector
-
-<!-- .slide: data-background="media/img/inspector.png" data-state="state--bg-dark" -->
-
-Visual tool for A-Frame. Just `<ctrl>+<alt>+i`.
-
-<div class="stretch" data-aframe-scene="scenes/80s.html"></div>
+<div style="display:inline-block; float:left; width: 45%">
+    <video src="media/video/ar-furniture-lake-1.mp4" autoplay loop></video>
+</div>
+<div style="display:inline-block; offset: 50%; width: 45%" >
+    <video src="media/video/ar-furniture-lake-2.mp4" autoplay loop></video>
+</div>
 
 ------
 
-<!-- .slide: data-background="media/img/header.png" -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PzfAefrG7iM" frameborder="0" allowfullscreen></iframe>
+<!--<img class="stretch" data-src="media/img/">-->
 
-# Community
+------
 
-https://aframe.io/blog/
+# More resources
 
----
+* aframe.io/aframe-school
+* appcreator.3d.io
+* bit.ly/making-webvr-vlog
+* aframe.io/blog
 
-<!-- .slide: data-background="media/img/apainter.gif" -->
+------
 
-# Art - *A-Painter*
+## Thank you!
 
-@mozillavr
+* Slides:			add link
+* Web:				3d.io
+* Blog:				medium.com/archilogic
+* Twitter:			@archilogic3d @salad_milk_soup
 
----
 
-<!-- .slide: data-background="media/img/syria.gif" -->
 
-# Journalism - *Fear of the Sky*
-
-Amnesty International UK
-
----
-
-<!-- .slide: data-background="media/img/mars.jpg" -->
-
-# Journalism - *Journey to Mars*
-
-The Washington Post
-
----
-
-<!-- .slide: data-background="media/img/citybuilder.gif" -->
-
-# Sandbox - *City Builder*
-
-@kfarr
-
----
-
-<!-- .slide: data-background="media/img/adit.gif" -->
-
-# Data Visualization - *Adit*
-
-@datatitian
-
----
-
-<!-- .slide: data-background="media/img/a-blast.gif" -->
-
-# Gaming - *A-Blast*
-
-@mozillavr
-
----
-
-<!-- .slide: data-background="media/img/ux.gif" -->
-
-# Prototyping - *UI Widgets*
-
-@whoyee
-
----
-
-<!-- .slide: data-background="media/img/math.gif" -->
-
-# Mathematics - *MathworldVR*
-
-@sleighdogs
-
----
-
-<!-- .slide: data-background="media/img/ar.gif" -->
-
-# AR - *AR.js + A-Frame*
-
-@jerome_etienne
-
----
-
-<!-- .slide: data-background="media/img/webvrstudio.png" -->
-
-# Tools - *WebVR Studio*
-
-@webvrstudio
-
----
-
-<!-- .slide: data-background-video="media/video/livetour.mp4" data-background-video-loop="true" -->
-
-# Real Estate - *Live Tour*
-
-iStaging
-
----
-
-<!-- .slide: data-background="media/img/cadavr.gif" -->
-
-# Education - *CadaVR*
-
-@drryanjames
-
----
-
-# aframe.io
-
-<div class="captioned-image-row">
-  <div>
-    <img data-src="media/img/github.png">
-    <i>180+ contributors 6000+ Stargazers</i>
-  </div>
-  <div>
-    <img data-src="media/img/slack.png">
-    <i>4000+ members on Slack</i>
-  </div>
-  <div>
-    <img data-src="media/img/scene-collage-circle.png">
-    <i>100s of featured projects</i>
-  </div>
-</div>
-
-<!-- NOTES -->
-- Open source and inclusive project
-- Most work done on GitHub
-- Active community on Slack to share projects, interact, hang out, seek help
-- Featured projects on the `awesome-aframe` repository and *A Week of A-Frame* blog

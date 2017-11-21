@@ -14,12 +14,12 @@ body {
   background: radial-gradient(#FAFAFA, #EAEAEA, #E5E5E5);
   background: -moz-radial-gradient(#FAFAFA, #EAEAEA, #E5E5E5);
   background: -webkit-radial-gradient(#FAFAFA, #EAEAEA, #E5E5E5);
-  background-color: #E5E5E5;
+  background-color: white;
 }
 
 html:-webkit-full-screen-ancestor,
 html:-moz-full-screen-ancestor {
-  background: inherit;
+  background: white;
 }
 
 .reveal {
@@ -27,6 +27,7 @@ html:-moz-full-screen-ancestor {
   font-size: 38px;
   font-weight: normal;
   color: #333;
+  background-color: white;
 }
 
 ::selection {
