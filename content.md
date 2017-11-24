@@ -14,19 +14,26 @@
 
 # Who's talking
 
+<img class="stretch" data-src="media/img/autofurnish.gif">
+
+Monika Kedrova, Software Engineer @Archilogic / 3d.io 
+
+------
+
+# Who's talking
+<!-- .slide: data-background-video="media/video/monika-hololens.mp4" autoplay -->
 <div style="display:inline-block; float:left; width: 45%; font-size:0.8em"><br>
-  <p class="talk-info" style="top:20%">
+  <p class="talk-info" style="top:20%" >
   Monika Kedrova<br><br>
-  Software Engineer @Archilogic / 3d.io<br><br>
   Biologist &rarr; English teacher &rarr; software engineer<br><br>
   @salad_milk_soup
   </p>
 </div>
 
 
-<div style="display:inline-block; offset: 50%; width: 40%">
-<img data-src="media/img/monika_hololens.jpg"></div>
-<!--<div class="image-row">
+ <!--<video src="media/video/monika-hololens.mp4" autoplay loop></div>
+ <div style="display:inline-block; offset: 50%; width: 40%">
+<div class="image-row">
   <div><img data-src="media/img/monika_hololens.jpg"></div>
 </div>-->
 
@@ -48,6 +55,24 @@
 ------
 
 # Why VR?
+
+------
+
+<!-- .slide: data-background="media/img/birdly.gif" -->
+
+<p class="talk-info" style="font-size:1.6em"> Immersion </p>
+
+------
+
+<!-- .slide: data-background="media/img/tilt-brush.gif" -->
+
+<p class="talk-info" style="font-size:1.6em"> Imagination </p>
+
+------
+
+<!-- .slide: data-background="media/img/360tours.gif" -->
+
+<p class="talk-info" style="font-size:1.6em"> Exploration </p>
 
 ------
 
@@ -85,33 +110,16 @@ The Washington Post
 
 ------
 
-<!-- .slide: data-background="media/img/a-blast.gif" -->
-
 # Gaming - *A-Blast*
 
 @mozillavr
 
-------
-
-<!-- .slide: data-background="media/img/birdly.gif" -->
-
-<p class="talk-info" style="font-size:1.6em"> Immersion </p>
+<!-- .slide: data-background="media/img/a-blast.gif" -->
 
 ------
 
-<!-- .slide: data-background="media/img/tilt-brush.gif" -->
-
-<p class="talk-info" style="font-size:1.6em"> Imagination </p>
-
-------
-
-<!-- .slide: data-background="media/img/360tours.gif" -->
-
-<p class="talk-info" style="font-size:1.6em"> Exploration </p>
-
-------
-
-<!-- .slide: data-background="media/img/airbus-hololens.png" -->
+<img style="float: left; margin-right: 1%; margin-bottom: 0.5em;" data-src="media/img/airbus-hololens.png"></img>
+<video style="top:100px" src="media/video/engine2.mp4" autoplay loop ></video>
 
 ------
 
@@ -159,6 +167,15 @@ Who has access to virtual reality?
 
 <img class="stretch" data-src="media/img/vr-sales-3.png">
 
+<!-- NOTES -->
+Want to get widespread use:
+
+Progressive enhancement:
+
+Maintaining consistent frame rate & user friendly experience regardless of different inputs and across platforms with various performance capabilities
+* From fast high end desktop computers with advanced controllers and tracking
+* To low end smartphones with no positional tracking and no controllers
+
 ------
 
 ##  Challenges
@@ -179,6 +196,14 @@ Who has access to virtual reality?
 </div>
 
 <!-- NOTES -->
+Types of interaction:
+* Gaze  (cardboard)
+* Gaming controllers (xbox, playstation)
+* rotation tracking controllers (daydream, gearvr) - laser like pointer
+* Position and rotation tracking controllers (htc vive, oculus touch)
+* Hand gesture based controls (hololens)
+
+
 - App stores and corporations control distribution: can take down or block content
 - Downloads / installs are a barrier to consumption: small business pages
 - Closed ecosystem: proprietary engines, steep learning curves, siloed experiences, fragmentation
@@ -206,6 +231,25 @@ Who has access to virtual reality?
 <!-- NOTES -->
 WebVR is...virtual reality in the browser, powered by the Internet
 
+Cross-browser Javascript API that provides interface to VR hardware and makes immersive 3D on the web possible
+    * Headset tracking - position of head & frame interpolation
+    * “Six degrees of freedom” and “three degrees of freedom” controller support
+* 
+* First developed in 2014 @mozilla
+* From 2016 first version of standard available on desktop Chrome, Firefox & 
+Samsung Internet for GearVR
+* Now the support is much wider:
+    * WebVR standards are worked on in the open collaboratively by all major players - 
+    Mozilla, Google, Oculus (Facebook), Microsoft, Samsung..
+* Better than native VR (app stores & downloads)
+* Current version 1.1 
+* Now discussions about creating a WebVR working group within the W3C.
+
+* Low barrier of entry:
+* No big commitment so ok to just try out - not necessary to stick to one type of device and content that’s only available for it (dedicated hw)
+* No downloads / App Store
+    * This works for games because of willingness to invest and the fact that people return again and again (vive & steam)
+* Experience easy to share, distribute - just one URL
 Open:
 - Anyone can publish
 - Open source culture with open standards
@@ -237,69 +281,33 @@ Not just a specification, it's implemented...
 
 ------
 
-https://webvr.rocks
+## Support
 
-<div class="captioned-image-row small">
-  <div>
-    <img data-src="media/img/firefox-nightly.png">
-    <i>Firefox Nightly</i>
-  </div>
-  <div>
-    <img data-src="media/img/edge.jpg">
-    <i>Microsoft Edge</i>
-  </div>
-  <div>
-    <img data-src="media/img/chromium.png">
-    <i>Chromium</i>
-  </div>
-</div>
 
-<div class="captioned-image-row small">
-  <div>
-    <img data-src="media/img/chrome.jpg">
-    <i>Chrome for Android</i>
-  </div>
-  <div>
-    <img data-src="media/img/carmel.jpg">
-    <i>Oculus Carmel</i>
-  </div>
-  <div>
-    <img data-src="media/img/samsung-browser.png">
-    <i>Samsung Internet</i>
-  </div>
-  <div>
-    <img data-src="media/img/google-cardboard.png">
-    <i>Mobile Polyfill</i>
-  </div>
-</div>
+<img class="stretch" data-src="media/img/browser-support.png">
+<img class="stretch" data-src="media/img/support.png">
 
-<!-- NOTES -->
-- Firefox + Chrome WebVR 1.0 hits release channels by early 2017
-- Currently behind Nightly, custom builds, and flags
-- Mobile Polyfill: use device motion / orientation sensors to polyfill on smartphones
-- With all the browsers behind it...
+---
 
-------
-
-## Availability across browsers
+## Support
 
 <img class="stretch" data-src="media/img/webvr-api-browsers.png">
 
-
 ------
 
-<!-- .slide: data-background="media/img/metaverse.jpg" -->
+## Let's build something!
 
-Too hard to create WebVR experiences...
 
-<!-- NOTES -->
- Metaverse
-<i>by Ada Rose Cannon (@lady_ada_king)</i>
-- Shared persistent collective virtual spaces
-- Alternate digital reality that the world may live, work, play
-- Must be decentralized/open/connected, the Web is best platform to fully realize
-- Where do we begin?
-- three.js abstracts WebGL, 3D, and WebVR, but could still make it more accessible
+<div class="captioned-image-row">
+  <div>
+    <img data-src="media/img/rotating-cube.gif">
+    WebGL
+  </div>
+  <div>
+    <img data-src="media/img/webvr.png">
+    WebVR
+  </div>
+</div>
 
 ------
 
@@ -341,7 +349,7 @@ A web framework for building virtual reality experiences
   - Prototype and experiment WebVR and VR UX faster
   - Vehicle to kickstart WebVR ecosystem
 
-------
+---
 
 ## Hello World
 
@@ -349,7 +357,7 @@ A web framework for building virtual reality experiences
 
 ```html
 <html>
-  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
   <a-scene>
 
 
@@ -369,7 +377,7 @@ A web framework for building virtual reality experiences
   - canvas, camera, renderer, lights, controls, render loop, WebVR polyfill, VREffect
 - Put stuff inside our scene...
 
-------
+---
 
 ## Hello World
 
@@ -377,7 +385,7 @@ A web framework for building virtual reality experiences
 
 ```html
 <html>
-  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
   <a-scene>
     <a-box color="#4CC3D9" position="-1 0.5 -3" rotation="0 45 0"></a-box>
     <a-cylinder color="#FFC65D" position="1 0.75 -3" radius="0.5" height="1.5"></a-cylinder>
@@ -394,6 +402,15 @@ A web framework for building virtual reality experiences
 - Readable: HTML arguably most accessible language in computing
 - Encapsulated: copy-and-paste HTML anywhere else and still work, no state or variables
 - Quickly look at a live example...
+
+---
+
+<div data-aframe-scene="scenes/demo.html"></div>
+<!-- .element: class="stretch" -->
+
+------
+
+<!-- .slide: data-background="media/img/architecture.jpg" data-transition="fade-in slide-out" -->
 
 ------
 
@@ -470,7 +487,7 @@ A web framework for building virtual reality experiences
     <video src="media/video/ar-furniture-lake-2.mp4" autoplay loop></video>
 </div>
 
-------
+---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PzfAefrG7iM" frameborder="0" allowfullscreen></iframe>
 <!--<img class="stretch" data-src="media/img/">-->
@@ -486,9 +503,8 @@ A web framework for building virtual reality experiences
 
 ------
 
-## Thank you!
+# Thank you!
 
-* Slides:			add link
 * Web:				3d.io
 * Blog:				medium.com/archilogic
 * Twitter:			@archilogic3d @salad_milk_soup

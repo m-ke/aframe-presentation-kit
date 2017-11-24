@@ -1,8 +1,8 @@
-# aframe-presentation-kit
 
-Official starter slides for giving talks and presentations about A-Frame.
+Slides for Codemotion Madrid on 24.11. 2017. Adapted from official starter slides for giving talks and presentations about A-Frame.
 
-[VIEW SLIDES](https://aframe.io/aframe-presentation-kit/#/)
+[VIEW ORIGINAL SLIDES](https://aframe.io/aframe-presentation-kit/#/)
+
 
 ## Installation
 
